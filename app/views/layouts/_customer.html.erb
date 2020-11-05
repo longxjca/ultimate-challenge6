@@ -1,1 +1,27 @@
-<p><%= link_to customer.name, customer %></p>
+<div class="column">
+
+  <div class="card">
+    <% if customer.image.present?%>
+      <div class="card-image">
+        <figure class="image">
+          <%= image_tag customer.image%>
+        </figure>
+      </div>
+    <% end %>
+
+    <div class="card-content">
+      <p class="title">
+          <p><%=  customer.name %></p>
+      </p>
+      <p><%=  customer.province %> </p>
+      <p><%=  customer.phone %> </p>
+      <p><%=  customer.email %> </p>
+
+    </div>
+    <footer class="card-footer">
+    </footer>
+
+
+  </div>
+</div>
+
