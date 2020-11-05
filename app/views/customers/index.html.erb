@@ -1,2 +1,7 @@
-<h1>Customers#index</h1>
-<p>Find me in app/views/customers/index.html.erb</p>
+
+<h1 class="title" >All Customers</h1>
+<div class="columns is-multiline">
+  <%= render @customers%>
+</div>
+<h4><%= link_to "alphabetized", alphabetized_path%></h4>
+<h4><%= link_to "missing_email", missing_email_path%></h4>

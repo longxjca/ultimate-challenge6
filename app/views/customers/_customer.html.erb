@@ -1,6 +1,8 @@
 <div class="column">
 
+
   <div class="card">
+  <h4 class= "title"><%=  customer.name %> </h4>
     <% if customer.image.present?%>
       <div class="card-image">
         <figure class="image">
@@ -10,12 +12,11 @@
     <% end %>
 
     <div class="card-content">
-      <p class="title">
-          <p><%=  customer.name %></p>
-      </p>
-      <p><%=  customer.province %> </p>
-      <p><%=  customer.phone %> </p>
-      <p><%=  customer.email %> </p>
+
+      <br>
+
+      <p><%=  customer.phone %> </p> <br>
+      <p><%=  customer.email %> </p> <br>
 
     </div>
     <footer class="card-footer">
